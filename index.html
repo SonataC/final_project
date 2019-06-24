@@ -3,6 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <title>Final project</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+            crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+            crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/Final.css">
@@ -14,17 +24,20 @@
     <div class="container-fluid">
         <div class="container main">
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-7">
                     <ul class="left">
                         <!-- class="dropdown-item"-->
                         <li>
                             <div class="dropdown">
-                                <button class="dropdown-toggle" data-toggle="dropdown">
+                                <span>
                                     <i class="fas fa-globe-europe"></i>
+                                </span>
+                                <button class="btn dropdown-toggle" type="button" id="drop_menu_button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     English
                                 </button>
-                                <div class="dropdown-menu">
-                                    <a class="dropdown-item active" href="#">English</a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item active" href="#">ENGLISH &#x2713;</a>
                                     <a class="dropdown-item" href="#">RTL</a>
                                 </div>
                             </div>
@@ -43,7 +56,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-5">
                     <ul class="right">
                         <li>
                             <i class="fab fa-facebook-f"></i>
@@ -81,28 +94,30 @@
                         <li>
                             <a href="#">HOME</a>
                         </li>
-                        <li class="dropdown">
-                            <button class="dropdown-toggle" data-toggle="dropdown">
-                                <a href="#">PAGES</a>
-                            </button>
-                            <div class="dropdown-menu">
-                                <a class="dropdown-item" href="#">ABOUT US</a>
-                                <a class="dropdown-item" href="#">ABOUT ME</a>
-                                <a class="dropdown-item" href="#">TEAM MEMBERS</a>
-                                <a class="dropdown-item" href="#">SERVICES</a>
-                                <a class="dropdown-item" href="#">PORTFOLIO ></a>
-                                <a class="dropdown-item" href="#">CONTACT US</a>
-                                <a class="dropdown-item" href="#">FAQ</a>
-                                <a class="dropdown-item" href="#">CAREERS</a>
-                                <a class="dropdown-item" href="#">404</a>
-                                <a class="dropdown-item" href="#">COMING SOON</a>
-                                <a class="dropdown-item" href="#">UNDER STRUCTURE</a>
-                                <a class="dropdown-item" href="#">SITEMAP</a>
-                                <a class="dropdown-item" href="#">REGISTER/LOGIN ></a>
-                                <a class="dropdown-item" href="#">PROJECT DETAILS</a>
-                                <a class="dropdown-item" href="#">MORE PAGES SOON</a>
+                        <li>
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" id="drop_button"
+                                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <a href="#">PAGES</a>
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">ABOUT US</a>
+                                    <a class="dropdown-item" href="#">ABOUT ME</a>
+                                    <a class="dropdown-item" href="#">TEAM MEMBERS</a>
+                                    <a class="dropdown-item" href="#">SERVICES</a>
+                                    <a class="dropdown-item" href="#">PORTFOLIO ></a>
+                                    <a class="dropdown-item" href="#">CONTACT US</a>
+                                    <a class="dropdown-item" href="#">FAQ</a>
+                                    <a class="dropdown-item" href="#">CAREERS</a>
+                                    <a class="dropdown-item" href="#">404</a>
+                                    <a class="dropdown-item" href="#">COMING SOON</a>
+                                    <a class="dropdown-item" href="#">UNDER STRUCTURE</a>
+                                    <a class="dropdown-item" href="#">SITEMAP</a>
+                                    <a class="dropdown-item" href="#">REGISTER/LOGIN ></a>
+                                    <a class="dropdown-item" href="#">PROJECT DETAILS</a>
+                                    <a class="dropdown-item" href="#">MORE PAGES SOON</a>
+                                </div>
                             </div>
-
                         </li>
                         <li>
                             <a href="#">SLIDERS</a>
@@ -124,11 +139,11 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-3">
-                    <input id="search" class="p-1" type="search" name="search" placeholder="search here...">
-                    <button type="submit" class="mr-3 p-1 isearch">
+                <div class="col-md-3 mx-0">
+                    <button type="submit" class="p-1 isearch">
                         <i class="fas fa-search"></i>
                     </button>
+                    <input id="search" class="p-1 mx-0" type="search" name="search" placeholder="search here...">
                     <button class="cart2">
                         <i class="fas fa-shopping-cart p-2"></i>
                     </button>
@@ -144,7 +159,6 @@
                 <img class="man" src="css/img/slide2.jpg" alt="slides">
                 <div class="text">
         <span class="bg-danger p-2 pb-3 text-light red">ENAR THEME IS THE BEST
-            <!-- BUTTON> > </>-->
         </span>
                     <span class="bg-light text-danger font-weight-bold p-2 white">
             FULLY RESPONSIVE DESIGN
@@ -177,73 +191,78 @@
         </div>
     </div>
 </div>
-<div class="container">
-    <div class="row">
-        <div class="col-md-4">
-            <div class="row">
-                <div class="col-4">
-                    <div class="circle my-4">
+<div class="container-fluid bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 grow">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="circle my-5">
                 <span>
                     <i class="fas fa-desktop icon"></i>
                 </span>
+                        </div>
                     </div>
-                </div>
-                <div class="col-8">
-                    <div class="sect-1">
-                        <h2>
-                            SUPER CODING
-                        </h2>
-                        <p>
-                            There are many variations of demo text passed sages of Lorem Ipsum available the majority
-                            There
-                            are many variations of demo.
-                        </p>
+                    <div class="col-8">
+                        <div class="sect-1 my-5">
+                            <h2>
+                                SUPER CODING
+                            </h2>
+                            <p>
+                                There are many variations of demo text passed sages of Lorem Ipsum available the
+                                majority
+                                There
+                                are many variations of demo.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col-md-4">
-            <div class="row">
-                <div class="col-4">
-                    <div class="circle my-4">
+            <div class="col-md-4 grow">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="circle my-5">
                 <span>
                     <i class="fas fa-tablet-alt icon"></i>
                 </span>
+                        </div>
                     </div>
-                </div>
-                <div class="col-8">
-                    <div class="sect-1">
-                        <h2>
-                            BEST USER INTERFACE
-                        </h2>
-                        <p>
-                            There are many variations of demo text passed sages of Lorem Ipsum available the majority
-                            There
-                            are many variations of demo.
-                        </p>
+                    <div class="col-8">
+                        <div class="sect-1 my-5">
+                            <h2>
+                                BEST USER INTERFACE
+                            </h2>
+                            <p>
+                                There are many variations of demo text passed sages of Lorem Ipsum available the
+                                majority
+                                There
+                                are many variations of demo.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col-md-4">
-            <div class="row">
-                <div class="col-4">
-                    <div class="circle my-4">
+            <div class="col-md-4 grow">
+                <div class="row">
+                    <div class="col-4">
+                        <div class="circle my-5">
                 <span>
                     <i class="fas fa-puzzle-piece icon"></i>
                 </span>
+                        </div>
                     </div>
-                </div>
-                <div class="col-8">
-                    <div class="sect-1">
-                        <h2>
-                            UNIQUE DESIGN
-                        </h2>
-                        <p>
-                            There are many variations of demo text passed sages of Lorem Ipsum available the majority
-                            There
-                            are many variations of demo.
-                        </p>
+                    <div class="col-8">
+                        <div class="sect-1 my-5">
+                            <h2>
+                                UNIQUE DESIGN
+                            </h2>
+                            <p>
+                                There are many variations of demo text passed sages of Lorem Ipsum available the
+                                majority
+                                There
+                                are many variations of demo.
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -288,129 +307,214 @@
         </div>
     </div>
 </div>
-<div class="container">
-    <div class="row">
-        <div class="col-md-6">
-            <div class="titles my-3">
-                <h3>
-                    WHY CHOOSE US?
-                </h3>
-                <div class="line">
-                    <div class="round">
+<div class="container-fluid bg-light">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="titles my-3">
+                    <div class="trans">
+                        <h3>
+                            WHY CHOOSE US?
+                        </h3>
+                        <div class="line">
+                            <div class="round">
+                            </div>
+                        </div>
+                    </div>
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                               aria-controls="home" aria-selected="true">Quality</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                               aria-controls="profile" aria-selected="false">Design</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                               aria-controls="contact" aria-selected="false">Programming</a>
+                        </li>
+                    </ul>
+
+                    <div class="tab-content" id="myTabContent">
+                        <div class="tab-pane fade show active text-secondary" id="home" role="tabpanel"
+                             aria-labelledby="quality-tab">
+                            Lorem Ipsum is simply dummy text of the printing and typeseting industry Lorem in text Ipsum
+                            has been the industry standar dummyy text ever since the when an iunesi known.
+                        </div>
+
+                        <div class="tab-pane fade text-secondary " id="profile" role="tabpanel"
+                             aria-labelledby="design-tab">
+                            Lorem Ipsum is simply dummy text of the printing and typeseting industry Lorem in text Ipsum
+                            has been the industry standar dummyy text ever since the when an iunesi known.
+                        </div>
+                        <div class="tab-pane fade text-secondary " id="contact" role="tabpanel"
+                             aria-labelledby="programming-tab">
+                            Lorem Ipsum is simply dummy text of the printing and typeseting industry Lorem in text Ipsum
+                            has been the industry standar dummyy text ever since the when an iunesi known.
+                        </div>
                     </div>
                 </div>
-                <ul class="nav nav-tabs" id="myTab" role="tablist">
-                    <li class="nav-item">
-                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
-                           aria-controls="home" aria-selected="true">Quality</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
-                           aria-controls="profile" aria-selected="false">Design</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
-                           aria-controls="contact" aria-selected="false">Programming</a>
-                    </li>
-                </ul>
-                <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="quality-tab">
-                        Lorem Ipsum is simply dummy text of the printing and typeseting industry Lorem in text Ipsum
-                        has been the industry standar dummyy text ever since the when an iunesi known.
+                <div class="row">
+                    <div class="col-6">
+                        <ul>
+                            <!--red circle icon-->
+                            <li class="d-block">
+                                <i class="fas fa-arrow-circle-right arr"></i>
+                                Multiple Layout
+                            </li>
+                            <li class="d-block">
+                                <i class="fas fa-arrow-circle-right arr"></i>
+                                Awesome Short Codes
+                            </li>
+                            <li class="d-block">
+                                <i class="fas fa-arrow-circle-right arr"></i>
+                                Browser Compatibility
+                            </li>
+                            <li class="d-block">
+                                <i class="fas fa-arrow-circle-right arr"></i>
+                                Easy to Edit Animations
+                            </li>
+                            <li class="d-block">
+                                <i class="fas fa-arrow-circle-right arr"></i>
+                                Parallax Effect
+                            </li>
+                            <li class="d-block">
+                                <i class="fas fa-arrow-circle-right arr"></i>
+                                Responsive Design
+                            </li>
+                            <li class="d-block">
+                                <i class="fas fa-arrow-circle-right arr"></i>
+                                Many Home Page Versions
+                            </li>
+                            <li class="d-block">
+                                <i class="fas fa-arrow-circle-right arr"></i>
+                                Many Blog Pages
+                            </li>
+                        </ul>
                     </div>
-                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="design-tab">
-                        Lorem Ipsum is simply dummy text of the printing and typeseting industry Lorem in text Ipsum
-                        has been the industry standar dummyy text ever since the when an iunesi known.
+                    <div class="col-6 px-0">
+                        <img class="img-fluid" src="css/img/porto5.jpg" alt="img">
                     </div>
-                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="programming-tab">
-                        Lorem Ipsum is simply dummy text of the printing and typeseting industry Lorem in text Ipsum
-                        has been the industry standar dummyy text ever since the when an iunesi known.
+                    <div class="col-6 px-0 d-none">
+                        <img class="img-fluid" src="css/img/porto4.jpg" alt="img">
+                    </div>
+                    <div class="col-6 px-0 d-none">
+                        <img class="img-fluid" src="css/img/porto3.jpg" alt="img">
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="col-md-6">
-            <div class="titles my-3">
-                <h3>
-                    WHY WORK WITH US?
-                </h3>
-                <div class="line">
-                    <div class="round">
-                    </div>
-                </div>
-            <div class="accordion my-3" id="accordionExample">
-                <div class="card">
-                    <div class="card-header" id="headingOne">
-                        <h2 class="mb-0">
-                            <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
-                                    aria-expanded="true" aria-controls="collapseOne">
-                                <i class="far fa-user"></i>
-                                CUSTOMER SERVICES 24/7
-                            </button>
-                        </h2>
-                    </div>
-
-                    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
-                         data-parent="#accordionExample">
-                        <div class="card-body">
-                            Lorem Ipsum is simply dummy text of the printing and typeseting industry Lorem in text Ipsum
-                            has been the industry standar dummyy text ever since the when an iunesi known.
-
-                            Donec tellus massa, tristique sit amet condim vel, facilisis quis sapien. Praesent id enim
-                            sit amet odio vulputate eleifend in in tortor standar dummyy text ever since the when an
-                            iunesi known.
-
-                            Lorem Ipsum is simply dummy text of the printing and typeseting industry Lorem in text Ipsum
-                            has been the industry standar dummyy text ever since the when an iunesi known.
+            <div class="col-md-6">
+                <div class="titles my-3">
+                    <div class="trans">
+                        <h3>
+                            WHY WORK WITH US?
+                        </h3>
+                        <div class="line">
+                            <div class="round">
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" id="headingTwo">
-                        <h2 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                                    data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                <i class="far fa-heart"></i>
-                                INTEGRITY AND HONESTY
-                            </button>
-                        </h2>
-                    </div>
-                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
-                        <div class="card-body">
-                            Lorem Ipsum is simply dummy text of the printing and typeseting industry Lorem in text Ipsum
-                            has been the industry standar dummyy text ever since the when an iunesi known.
+                    <div class="accordion my-3" id="accordionExample">
+                        <div class="card">
+                            <div class="card-header" id="headingOne">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link" type="button" data-toggle="collapse"
+                                            data-target="#collapseOne"
+                                            aria-expanded="true" aria-controls="collapseOne">
+                                        <i class="far fa-user"></i>
+                                        CUSTOMER SERVICES 24/7
+                                    </button>
+                                </h2>
+                            </div>
 
-                            Donec tellus massa, tristique sit amet condim vel, facilisis quis sapien. Praesent id enim
-                            sit amet odio vulputate eleifend in in tortor standar dummyy text ever since the when an
-                            iunesi known.
+                            <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                 data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Lorem Ipsum is simply dummy text of the printing and typeseting industry Lorem in
+                                    text
+                                    Ipsum
+                                    has been the industry standar dummyy text ever since the when an iunesi known.
 
-                            Lorem Ipsum is simply dummy text of the printing and typeseting industry Lorem in text Ipsum
-                            has been the industry standar dummyy text ever since the when an iunesi known.
+                                    Donec tellus massa, tristique sit amet condim vel, facilisis quis sapien. Praesent
+                                    id
+                                    enim
+                                    sit amet odio vulputate eleifend in in tortor standar dummyy text ever since the
+                                    when an
+                                    iunesi known.
+
+                                    Lorem Ipsum is simply dummy text of the printing and typeseting industry Lorem in
+                                    text
+                                    Ipsum
+                                    has been the industry standar dummyy text ever since the when an iunesi known.
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <div class="card-header" id="headingThree">
-                        <h2 class="mb-0">
-                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
-                                    data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                <i class="fas fa-check"></i>
-                                THE BEST SALES ON THE COUNTRY
-                            </button>
-                        </h2>
-                    </div>
-                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
-                         data-parent="#accordionExample">
-                        <div class="card-body">
-                            Lorem Ipsum is simply dummy text of the printing and typeseting industry Lorem in text Ipsum
-                            has been the industry standar dummyy text ever since the when an iunesi known.
+                        <div class="card">
+                            <div class="card-header" id="headingTwo">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                            data-target="#collapseTwo" aria-expanded="false"
+                                            aria-controls="collapseTwo">
+                                        <i class="far fa-heart"></i>
+                                        INTEGRITY AND HONESTY
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                 data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Lorem Ipsum is simply dummy text of the printing and typeseting industry Lorem in
+                                    text
+                                    Ipsum
+                                    has been the industry standar dummyy text ever since the when an iunesi known.
 
-                            Donec tellus massa, tristique sit amet condim vel, facilisis quis sapien. Praesent id enim
-                            sit amet odio vulputate eleifend in in tortor standar dummyy text ever since the when an
-                            iunesi known.
+                                    Donec tellus massa, tristique sit amet condim vel, facilisis quis sapien. Praesent
+                                    id
+                                    enim
+                                    sit amet odio vulputate eleifend in in tortor standar dummyy text ever since the
+                                    when an
+                                    iunesi known.
 
-                            Lorem Ipsum is simply dummy text of the printing and typeseting industry Lorem in text Ipsum
-                            has been the industry standar dummyy text ever since the when an iunesi known.
+                                    Lorem Ipsum is simply dummy text of the printing and typeseting industry Lorem in
+                                    text
+                                    Ipsum
+                                    has been the industry standar dummyy text ever since the when an iunesi known.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card">
+                            <div class="card-header" id="headingThree">
+                                <h2 class="mb-0">
+                                    <button class="btn btn-link collapsed" type="button" data-toggle="collapse"
+                                            data-target="#collapseThree" aria-expanded="false"
+                                            aria-controls="collapseThree">
+                                        <i class="fas fa-check"></i>
+                                        THE BEST SALES ON THE COUNTRY
+                                    </button>
+                                </h2>
+                            </div>
+                            <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                 data-parent="#accordionExample">
+                                <div class="card-body">
+                                    Lorem Ipsum is simply dummy text of the printing and typeseting industry Lorem in
+                                    text
+                                    Ipsum
+                                    has been the industry standar dummyy text ever since the when an iunesi known.
+
+                                    Donec tellus massa, tristique sit amet condim vel, facilisis quis sapien. Praesent
+                                    id
+                                    enim
+                                    sit amet odio vulputate eleifend in in tortor standar dummyy text ever since the
+                                    when an
+                                    iunesi known.
+
+                                    Lorem Ipsum is simply dummy text of the printing and typeseting industry Lorem in
+                                    text
+                                    Ipsum
+                                    has been the industry standar dummyy text ever since the when an iunesi known.
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -418,7 +522,230 @@
         </div>
     </div>
 </div>
+<div class="cont-fluid border-top border-bottom">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 my-3">
+                <div class="row">
+                    <div class="col-md-3 px-5">
+                        <i class="far fa-user icons"></i>
+                    </div>
+                    <div class="col-md-3 px-5">
+                        <i class="far fa-heart icons"></i>
+                    </div>
+                    <div class="col-md-3 px-5">
+                        <i class="fas fa-code icons"></i>
+                    </div>
+                    <div class="col-md-3 px-5">
+                        <i class="far fa-paper-plane icons"></i>
+                    </div>
+                </div>
+                <div class="row text-secondary py-4">
+                    <div class="col-md-3 px-4">
+                        <h4 class="numb">
+                            1500
+                        </h4>
+                    </div>
+                    <div class="col-md-3 px-4">
+                        <h4 class="numb">
+                            13
+                        </h4>
+                    </div>
+                    <div class="col-md-3 px-4">
+                        <h4 class="numb">
+                            94771
+                        </h4>
+                    </div>
+                    <div class="col-md-3 px-4">
+                        <h4 class="numb">
+                            384
+                        </h4>
+                    </div>
+                </div>
+                <div class="row text-secondary">
+                    <div class="col-md-3 px-3">
+                        <span class="txt">
+                            Clients
+                        </span>
+                    </div>
+                    <div class="col-md-3 px-3">
+                        <span class="txt">
+                        Awards
+                    </span>
+                    </div>
+                    <div class="col-md-3 px-3">
+                        <span class="txt">
+                        Line Of Code
+                    </span>
+                    </div>
+                    <div class="col-md-3 px-3">
+                        <span class="txt">
+                        Projects
+                    </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>
+<div class="container-fluid bg-light border-bottom">
+    <div class="container">
+        <div class="row team">
+            <div class="col-md-12 my-5">
+                <h3>
+                    MEET OUR TEAM
+                </h3>
+                <div class="blue-line">
+                    <span>
+                        <i class="far fa-user head"></i>
+                    </span>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <p class="text-secondary my-3 p-3" id="personel">
+                            We believe in a diverse range of personel to bring creative skills, thoughts, and ideas to
+                            the table.
+                        </p>
+                    </div>
+                </div>
+                <div class="row my-3">
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-7 text">
+                                <h5>
+                                    JOHN BORIS
+                                </h5>
+                                <span class="text-secondary">
+                                    CCO & Product manager
+                                </span>
+                                <p class="text-secondary pt-3">
+                                    Lorem Ipsum is a simply dummie to text of the printing and Lorem off typesetting
+                                    industry.
+                                </p>
+                            </div>
+                            <div class="col-md-5 team-photo">
+                                <img src="css/img/team1.jpg">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-md-5 team-photo">
+                                <img src="css/img/team2.jpg">
+                            </div>
+                            <div class="col-md-7 text2">
+                                <h5>
+                                    NIX MAXWELL
+                                </h5>
+                                <span class="text-secondary">
+                                    Manager
+                                </span>
+                                <p class="text-secondary pt-3">
+                                    Lorem Ipsum is a simply dummie to text of the printing and Lorem off typesetting
+                                    industry.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid border-bottom">
+    <div class="container">
+        <div class="row team my-5">
+            <div class="col-md-12">
+                <h3>
+                    OUR SERVICES
+                </h3>
+                <div class="blue-line">
+                    <div id="dot">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 my-5">
+                    <div class="row grow2">
+                        <div class="col-md-2 my-4">
+                            <div class="circle2">
+                            <span>
+                                <i class="fas fa-desktop ic"></i>
+                            </span>
+                            </div>
+                        </div>
+                        <div class="col-md-10 my-4">
+                            <h4>
+                                PREMIUM SLIDERS INCLUDED
+                            </h4>
+                            <p>
+                                There are many variations of demo text passed sages of Lorem Ipsum available the
+                                majority.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row grow2">
+                        <div class="col-md-2 my-4">
+                            <div class="circle2">
+                            <span>
+                                <i class="fas fa-tablet-alt ic"></i>
+                            </span>
+                            </div>
+                        </div>
+                        <div class="col-md-10 my-4">
+                            <h4>
+                                PREMIUM SLIDERS INCLUDED
+                            </h4>
+                            <p>
+                                There are many variations of demo text passed sages of Lorem Ipsum available the
+                                majority.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="row grow2">
+                        <div class="col-md-2 my-4">
+                            <div class="circle2">
+                            <span>
+                                <i class="fas fa-flask ic"></i>
+                            </span>
+                            </div>
+                        </div>
+                        <div class="col-md-10 my-4">
+                            <h4>
+                                PREMIUM SLIDERS INCLUDED
+                            </h4>
+                            <p>
+                                There are many variations of demo text passed sages of Lorem Ipsum available the
+                                majority.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 pic">
+                    <img src="css/img/looking1.jpg">
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container-fluid bg-light">
+    <div class="container">
+        <div class="row team">
+            <div class="col-md-12 my-5">
+                <h3>
+                    PRICING <span class="text-primary">PLANS</span>
+                </h3>
+                <div class="blue-line">
+                    <div id="port">
+                        <i class="fas fa-briefcase"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <!--FILLED WITH JS-->
+            </div>
+        </div>
+    </div>
 </div>
 <script src="js/final.js"></script>
 </body>
