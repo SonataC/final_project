@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Final project</title>
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -100,22 +101,22 @@
                                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     <a href="#">PAGES</a>
                                 </button>
-                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                                    <a class="dropdown-item" href="#">ABOUT US</a>
-                                    <a class="dropdown-item" href="#">ABOUT ME</a>
-                                    <a class="dropdown-item" href="#">TEAM MEMBERS</a>
-                                    <a class="dropdown-item" href="#">SERVICES</a>
-                                    <a class="dropdown-item" href="#">PORTFOLIO ></a>
-                                    <a class="dropdown-item" href="#">CONTACT US</a>
-                                    <a class="dropdown-item" href="#">FAQ</a>
-                                    <a class="dropdown-item" href="#">CAREERS</a>
-                                    <a class="dropdown-item" href="#">404</a>
-                                    <a class="dropdown-item" href="#">COMING SOON</a>
-                                    <a class="dropdown-item" href="#">UNDER STRUCTURE</a>
-                                    <a class="dropdown-item" href="#">SITEMAP</a>
-                                    <a class="dropdown-item" href="#">REGISTER/LOGIN ></a>
-                                    <a class="dropdown-item" href="#">PROJECT DETAILS</a>
-                                    <a class="dropdown-item" href="#">MORE PAGES SOON</a>
+                                <div class="dropdown-menu bg-dark" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item text-light" href="#">ABOUT US</a>
+                                    <a class="dropdown-item text-light" href="#">ABOUT ME</a>
+                                    <a class="dropdown-item text-light" href="#">TEAM MEMBERS</a>
+                                    <a class="dropdown-item text-light" href="#">SERVICES</a>
+                                    <a class="dropdown-item text-light" href="#">PORTFOLIO ></a>
+                                    <a class="dropdown-item text-light" href="#">CONTACT US</a>
+                                    <a class="dropdown-item text-light" href="#">FAQ</a>
+                                    <a class="dropdown-item text-light" href="#">CAREERS</a>
+                                    <a class="dropdown-item text-light" href="#">404</a>
+                                    <a class="dropdown-item text-light" href="#">COMING SOON</a>
+                                    <a class="dropdown-item text-light" href="#">UNDER STRUCTURE</a>
+                                    <a class="dropdown-item text-light" href="#">SITEMAP</a>
+                                    <a class="dropdown-item text-light" href="#">REGISTER/LOGIN ></a>
+                                    <a class="dropdown-item text-light" href="#">PROJECT DETAILS</a>
+                                    <a class="dropdown-item text-light" href="#">MORE PAGES SOON</a>
                                 </div>
                             </div>
                         </li>
@@ -525,64 +526,35 @@
 <div class="cont-fluid border-top border-bottom">
     <div class="container">
         <div class="row">
-            <div class="col-md-12 my-3">
-                <div class="row">
-                    <div class="col-md-3 px-5">
-                        <i class="far fa-user icons"></i>
-                    </div>
-                    <div class="col-md-3 px-5">
-                        <i class="far fa-heart icons"></i>
-                    </div>
-                    <div class="col-md-3 px-5">
-                        <i class="fas fa-code icons"></i>
-                    </div>
-                    <div class="col-md-3 px-5">
-                        <i class="far fa-paper-plane icons"></i>
-                    </div>
+            <br>
+        </div>
+        <div class="row text-center">
+            <div class="col">
+                <div class="counter">
+                    <i class="fas fa-user-alt"></i>
+                    <h2 class="timer count-title count-number" data-to="1500" data-speed="1500"></h2>
+                    <p class="count-text ">Clients</p>
                 </div>
-                <div class="row text-secondary py-4">
-                    <div class="col-md-3 px-4">
-                        <h4 class="numb">
-                            1500
-                        </h4>
-                    </div>
-                    <div class="col-md-3 px-4">
-                        <h4 class="numb">
-                            13
-                        </h4>
-                    </div>
-                    <div class="col-md-3 px-4">
-                        <h4 class="numb">
-                            94771
-                        </h4>
-                    </div>
-                    <div class="col-md-3 px-4">
-                        <h4 class="numb">
-                            384
-                        </h4>
-                    </div>
+            </div>
+            <div class="col">
+                <div class="counter">
+                    <i class="fas fa-heart"></i>
+                    <h2 class="timer count-title count-number" data-to="13" data-speed="1500"></h2>
+                    <p class="count-text ">Awards</p>
                 </div>
-                <div class="row text-secondary">
-                    <div class="col-md-3 px-3">
-                        <span class="txt">
-                            Clients
-                        </span>
-                    </div>
-                    <div class="col-md-3 px-3">
-                        <span class="txt">
-                        Awards
-                    </span>
-                    </div>
-                    <div class="col-md-3 px-3">
-                        <span class="txt">
-                        Line Of Code
-                    </span>
-                    </div>
-                    <div class="col-md-3 px-3">
-                        <span class="txt">
-                        Projects
-                    </span>
-                    </div>
+            </div>
+            <div class="col">
+                <div class="counter">
+                    <i class="fas fa-code"></i>
+                    <h2 class="timer count-title count-number" data-to="94771" data-speed="1500"></h2>
+                    <p class="count-text ">Lines of code</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="counter">
+                    <i class="fab fa-telegram-plane"></i>
+                    <h2 class="timer count-title count-number" data-to="384" data-speed="1500"></h2>
+                    <p class="count-text ">Projects</p>
                 </div>
             </div>
         </div>
@@ -728,7 +700,7 @@
         </div>
     </div>
 </div>
-<div class="container-fluid bg-light">
+<div class="container-fluid bg-light border-bottom">
     <div class="container">
         <div class="row team">
             <div class="col-md-12 my-5">
@@ -743,6 +715,149 @@
             </div>
             <div class="row">
                 <!--FILLED WITH JS-->
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="container-fluid border-bottom">
+<div class="container">
+    <div class="row">
+        <h1 class="centered mt-5">
+            Contact us
+        </h1>
+    </div>
+    <div class="">
+        <span class="separator"></span>
+    </div>
+    <div class="row my-4">
+        <i class="far fa-envelope-open en-ic mx-3 text-primary"></i>
+        <h4 class="text-primary">GET ON TOUCH</h4>
+    </div>
+    <span class="spacer50"></span>
+    <div class="">
+        <form>
+            <div class="row my-3">
+                <div class="col-md-2">
+                    <label for="name" class="mx-3"> Name <span class="text-danger">*</span></label>
+                </div>
+                <div class="col-md-10">
+                    <input id="name" type="text" class="p-1" placeholder="Full Name"
+                           aria-describedby="basic-addon1">
+                </div>
+            </div>
+            <div class="row my-3">
+                <div class="col-md-2">
+                    <label for="email" class="mx-3"> Email <span class="text-danger">*</span></label>
+                </div>
+                <div class="col-md-10">
+                    <input id="email" type="text" class="p-1" placeholder="maile@sitename.com"
+                           aria-describedby="basic-addon1">
+                </div>
+            </div>
+            <div class="row my-3">
+                <div class="col-md-2">
+                    <label for="subject" class="mx-3"> Subject <span class="text-danger">*</span></label>
+                </div>
+                <div class="col-md-10">
+                    <input id="subject" class="p-1" type="text"
+                           aria-describedby="basic-addon1">
+                </div>
+            </div>
+            <div class="row my-3">
+                <div class="col-md-2">
+                    <label for="message" class="mx-3"> Message <span class="text-danger">*</span></label>
+                </div>
+                <div class="col-md-10">
+                    <textarea id="message" class="p-1" aria-label="With textarea"></textarea>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-2">
+                </div>
+                <div class="col-md-10">
+                    <button type="submit" class="btn btn-primary mb-5" id="prim">&#x2713; Send Your Message</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+</div>
+<div class="container-fluid border-bottom" id="color">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 mt-3 mb-3">
+                <h3>
+                    OUR LOCATION
+                </h3>
+            </div>
+        </div>
+
+    </div>
+</div>
+<div class="container-fluid bord">
+<!--google maps-->
+    map
+</div>
+<footer class="bg-dark text-secondary bord">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3">
+                <div class="row border-bottom">
+                    <div class="col-md-12">light logo + txt</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">NEWSTELLER</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="row">
+                    <div class="col-md-5">pav</div>
+                    <div class="col-md-7">txt</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-5">pav</div>
+                    <div class="col-md-7">txt</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-5">pav</div>
+                    <div class="col-md-7">txt</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-5">pav</div>
+                    <div class="col-md-7">txt</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">btn</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="row border-bottom">
+                    <div class="col-md-12">nine btn</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">pic</div>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="row border-bottom">
+                    <div class="col-md-12">JOHN DOE<br>kbjv</div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">CUSTOM VIDEO</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div class="container-fluid text-secondary" id="back_ground">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6">
+                copyright
+            </div>
+            <div class="col-md-6">
+                nav like thing
             </div>
         </div>
     </div>
