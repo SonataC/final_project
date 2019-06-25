@@ -83,7 +83,7 @@
         </div>
     </div>
 </header>
-<nav>
+<nav class="sticky-top">
     <div class="container-fluid">
         <div class="container">
             <div class="row">
@@ -721,67 +721,67 @@
 </div>
 
 <div class="container-fluid border-bottom">
-<div class="container">
-    <div class="row">
-        <h1 class="centered mt-5">
-            Contact us
-        </h1>
+    <div class="container">
+        <div class="row">
+            <h1 class="centered mt-5">
+                Contact us
+            </h1>
+        </div>
+        <div class="">
+            <span class="separator"></span>
+        </div>
+        <div class="row my-4">
+            <i class="far fa-envelope-open en-ic mx-3 text-primary"></i>
+            <h4 class="text-primary">GET ON TOUCH</h4>
+        </div>
+        <span class="spacer50"></span>
+        <div class="">
+            <form>
+                <div class="row my-3">
+                    <div class="col-md-2">
+                        <label for="name" class="mx-3"> Name <span class="text-danger">*</span></label>
+                    </div>
+                    <div class="col-md-10">
+                        <input id="name" type="text" class="p-1" placeholder="Full Name"
+                               aria-describedby="basic-addon1">
+                    </div>
+                </div>
+                <div class="row my-3">
+                    <div class="col-md-2">
+                        <label for="email" class="mx-3"> Email <span class="text-danger">*</span></label>
+                    </div>
+                    <div class="col-md-10">
+                        <input id="email" type="text" class="p-1" placeholder="maile@sitename.com"
+                               aria-describedby="basic-addon1">
+                    </div>
+                </div>
+                <div class="row my-3">
+                    <div class="col-md-2">
+                        <label for="subject" class="mx-3"> Subject <span class="text-danger">*</span></label>
+                    </div>
+                    <div class="col-md-10">
+                        <input id="subject" class="p-1" type="text"
+                               aria-describedby="basic-addon1">
+                    </div>
+                </div>
+                <div class="row my-3">
+                    <div class="col-md-2">
+                        <label for="message" class="mx-3"> Message <span class="text-danger">*</span></label>
+                    </div>
+                    <div class="col-md-10">
+                        <textarea id="message" class="p-1" aria-label="With textarea"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2">
+                    </div>
+                    <div class="col-md-10">
+                        <button type="submit" class="btn btn-primary mb-5" id="prim">&#x2713; Send Your Message</button>
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
-    <div class="">
-        <span class="separator"></span>
-    </div>
-    <div class="row my-4">
-        <i class="far fa-envelope-open en-ic mx-3 text-primary"></i>
-        <h4 class="text-primary">GET ON TOUCH</h4>
-    </div>
-    <span class="spacer50"></span>
-    <div class="">
-        <form>
-            <div class="row my-3">
-                <div class="col-md-2">
-                    <label for="name" class="mx-3"> Name <span class="text-danger">*</span></label>
-                </div>
-                <div class="col-md-10">
-                    <input id="name" type="text" class="p-1" placeholder="Full Name"
-                           aria-describedby="basic-addon1">
-                </div>
-            </div>
-            <div class="row my-3">
-                <div class="col-md-2">
-                    <label for="email" class="mx-3"> Email <span class="text-danger">*</span></label>
-                </div>
-                <div class="col-md-10">
-                    <input id="email" type="text" class="p-1" placeholder="maile@sitename.com"
-                           aria-describedby="basic-addon1">
-                </div>
-            </div>
-            <div class="row my-3">
-                <div class="col-md-2">
-                    <label for="subject" class="mx-3"> Subject <span class="text-danger">*</span></label>
-                </div>
-                <div class="col-md-10">
-                    <input id="subject" class="p-1" type="text"
-                           aria-describedby="basic-addon1">
-                </div>
-            </div>
-            <div class="row my-3">
-                <div class="col-md-2">
-                    <label for="message" class="mx-3"> Message <span class="text-danger">*</span></label>
-                </div>
-                <div class="col-md-10">
-                    <textarea id="message" class="p-1" aria-label="With textarea"></textarea>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-2">
-                </div>
-                <div class="col-md-10">
-                    <button type="submit" class="btn btn-primary mb-5" id="prim">&#x2713; Send Your Message</button>
-                </div>
-            </div>
-        </form>
-    </div>
-</div>
 </div>
 <div class="container-fluid border-bottom" id="color">
     <div class="container">
@@ -796,7 +796,7 @@
     </div>
 </div>
 <div class="container-fluid bord">
-<!--google maps-->
+    <!--google maps-->
     map
 </div>
 <footer class="bg-dark text-secondary bord">
@@ -804,47 +804,257 @@
         <div class="row">
             <div class="col-md-3">
                 <div class="row border-bottom">
-                    <div class="col-md-12">light logo + txt</div>
+                    <div class="col-md-12">
+                        <h6 class="text-light mt-5">
+                            COMPANY INFO
+                        </h6>
+                        <img src="css/img/logo-light.png" class="my-3">
+                        <p class="my-3 ftr">
+                            There are many Purchase Now There are many variations of passages of Lorem Ipsum available,
+                            but the majority.
+                        </p>
+                        <button class="bt-d text-light px-3 py-1 my-3">
+                            <span>  > </span>
+                            <span>Read More</span>
+                        </button>
+                    </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-12">NEWSTELLER</div>
+                    <div class="col-md-12">
+                        <h6 class="text-light mt-4">
+                            NEWSTELLER SIGNUP
+                        </h6>
+                        <p class="mt-3 mb-5 ftr">
+                            By subscribing to our mailing list you will always be update with the latest news :
+                        </p>
+                        <form class="mx-0">
+                            <input type="email" name="email" placeholder="Your Email Here..." class="p-1">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="far fa-paper-plane mx-0"></i>
+                            </button>
+                        </form>
+                    </div>
                 </div>
             </div>
             <div class="col-md-3">
-                <div class="row">
-                    <div class="col-md-5">pav</div>
-                    <div class="col-md-7">txt</div>
+                <h6 class="text-light mt-5">
+                    RECENT POSTS
+                </h6>
+                <div class="row my-3">
+                    <div class="col-md-5">
+                        <img src="css/img/thumb1.jpg">
+                    </div>
+                    <div class="col-md-7">
+                        <h6 class="thumb text-light">
+                            Best HTML5 Theme
+                        </h6>
+                        <span class="thumb">
+                            2015/01/23
+                        </span>
+                        <br>
+                        <span class="thumb">
+                            Tutorials, Videos
+                        </span>
+                    </div>
+                </div>
+                <div class="row my-3">
+                    <div class="col-md-5">
+                        <img src="css/img/thumb2.jpg">
+                    </div>
+                    <div class="col-md-7">
+                        <h6 class="thumb text-light">
+                            Responsive Design
+                        </h6>
+                        <span class="thumb">
+                            2015/02/17
+                        </span>
+                        <br>
+                        <span class="thumb">
+                            Audio, Videos
+                        </span>
+                    </div>
+                </div>
+                <div class="row my-3">
+                    <div class="col-md-5">
+                        <img src="css/img/thumb3.jpg">
+                    </div>
+                    <div class="col-md-7">
+                        <h6 class="thumb text-light">
+                            Many Home Pages
+                        </h6>
+                        <span class="thumb">
+                            2015/02/17
+                        </span>
+                        <br>
+                        <span class="thumb">
+                            Tutorials, Design
+                        </span>
+                    </div>
+                </div>
+                <div class="row my-3">
+                    <div class="col-md-5">
+                        <img src="css/img/thumb4.jpg">
+                    </div>
+                    <div class="col-md-7">
+                        <h6 class="thumb text-light">
+                            Best HTML5 Theme
+                        </h6>
+                        <span class="thumb">
+                            2015/01/23
+                        </span>
+                        <br>
+                        <span class="thumb">
+                            Tutorials, Videos
+                        </span>
+                    </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-5">pav</div>
-                    <div class="col-md-7">txt</div>
-                </div>
-                <div class="row">
-                    <div class="col-md-5">pav</div>
-                    <div class="col-md-7">txt</div>
-                </div>
-                <div class="row">
-                    <div class="col-md-5">pav</div>
-                    <div class="col-md-7">txt</div>
-                </div>
-                <div class="row">
-                    <div class="col-md-12">btn</div>
+                    <div class="col-md-12">
+                        <button class="btn btn-dark border-info form-control px-3 mb-5 text-info" id="butt">
+                            <span>
+                                <i class="fas fa-arrow-right"></i>
+                                Read More Posts
+                                <i class="fas fa-arrow-right display"></i></span>
+                        </button>
+                    </div>
                 </div>
             </div>
             <div class="col-md-3">
+                <h6 class="text-light mt-5">
+                    CLOUD TAGS
+                </h6>
                 <div class="row border-bottom">
-                    <div class="col-md-12">nine btn</div>
+                    <div class="col-md-12">
+                        <button class="btn bt-d2 my-1 text-secondary">
+                            <span>
+                                WORDPRESS
+                            </span>
+                        </button>
+                        <button class="btn bt-d2 my-1 text-secondary">
+                            <span>
+                                CREATIVE
+                            </span>
+                        </button>
+                        <button class="btn bt-d2 my-1 text-secondary">
+                           <span>
+                               CSS3
+                           </span>
+                        </button>
+                        <button class="btn bt-d2 my-1 text-secondary">
+                            <span>
+                                DESIGN
+                            </span>
+                        </button>
+                        <button class="btn bt-d2 my-1 text-secondary">
+                           <span>
+                               GRAPHIC
+                           </span>
+                        </button>
+                        <button class="btn bt-d2 my-1 text-secondary">
+                            <span>
+                                HTML5
+                            </span>
+                        </button>
+                        <button class="btn bt-d2 my-1 mb-5 text-secondary">
+                           <span>
+                               SEO
+                           </span>
+                        </button>
+                        <button class="btn bt-d2 my-1 mb-5 text-secondary">
+                            <span>
+                                CSS3
+                            </span>
+                        </button>
+                        <button class="btn bt-d2 my-1 mb-5 text-secondary">
+                           <span>
+                               WEB DESIGN
+                           </span>
+                        </button>
+                    </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-12">pic</div>
+                    <div class="col-md-12">
+                        <h6 class="text-light mt-3">
+                            FLICKER WIDGET
+                        </h6>
+                        <div class="row">
+                            <div class="col-md-4 my-3">
+                                <img src="css/img/flicker1.jpg" class="im">
+                            </div>
+                            <div class="col-md-4 my-3">
+                                <img src="css/img/flicker2.jpg" class="im">
+                            </div>
+                            <div class="col-md-4 my-3">
+                                <img src="css/img/flicker3.jpg" class="im">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-4">
+                                <img src="css/img/flicker4.jpg" class="im">
+                            </div>
+                            <div class="col-md-4">
+                                <img src="css/img/flicker5.jpg" class="im">
+                            </div>
+                            <div class="col-md-4">
+                                <img src="css/img/flicker6.jpg" class="im">
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
             <div class="col-md-3">
+                <h6 class="text-light mt-5 mb-4">
+                    BEST AUTHOR
+                </h6>
                 <div class="row border-bottom">
-                    <div class="col-md-12">JOHN DOE<br>kbjv</div>
+                    <div class="col-md-12">
+                        <div class="wht bg-light mb-5">
+                            <img src="css/img/team2.jpg" id="im_brd">
+                            <div class="row">
+                                <div class="col-md-5">
+                                </div>
+                                <div class="col-md-7">
+                                    JOHN DOE
+                                    <div class="row">
+                                        <div class="col-md-12 px-0">
+                                            <ul>
+                                                <li class="d-inline-block">
+                                                    <i class="fab fa-twitter"></i>
+                                                </li>
+                                                <li class="d-inline-block">
+                                                    <i class="fab fa-facebook-f"></i>
+                                                </li>
+                                                <li class="d-inline-block">
+                                                    <i class="fab fa-google-plus-g"></i>
+                                                </li>
+                                                <li class="d-inline-block">
+                                                    <i class="fab fa-linkedin-in"></i>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 <div class="row">
-                    <div class="col-md-12">CUSTOM VIDEO</div>
+                    <div class="col-md-12 mt-3 text-light">
+                        <h6>
+                            CUSTOM VIDEO
+                        </h6>
+                        <div id="video" class="mt-4">
+                            <img src="css/img/blog5.jpg">
+                            <div class="play">
+                            </div>
+                            <button id="arrow">
+                                <a href="#">
+                                    <i class="far fa-play-circle"></i>
+                                </a>
+                            </button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -853,11 +1063,29 @@
 <div class="container-fluid text-secondary" id="back_ground">
     <div class="container">
         <div class="row">
-            <div class="col-md-6">
-                copyright
+            <div class="col-md-6 my-3">
+                <span class="small">
+                    Copyright © 2015 Powered By
+                    <a href="#">IdealTheme </a> -
+                    <a href="#">Enar Theme </a>
+                    - All Rights Reserved
+                </span>
             </div>
-            <div class="col-md-6">
-                nav like thing
+            <div class="col-md-6 my-3">
+                <ul>
+                    <li>
+                        Home <span class="ml-3">/</span>
+                    </li>
+                    <li>
+                        About Us <span class="ml-3">/</span>
+                    </li>
+                    <li>
+                        Help Center <span class="ml-3">/</span>
+                    </li>
+                    <li>
+                        Contact Us
+                    </li>
+                </ul>
             </div>
         </div>
     </div>
