@@ -16,9 +16,9 @@
             crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="css/Final.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
           integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/Final.css">
 </head>
 <body>
 <header>
@@ -140,17 +140,21 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-md-3 mx-0">
-                    <button type="submit" class="p-1 isearch">
-                        <i class="fas fa-search"></i>
-                    </button>
-                    <input id="search" class="p-1 mx-0" type="search" name="search" placeholder="search here...">
-                    <button class="cart2">
-                        <i class="fas fa-shopping-cart p-2"></i>
-                    </button>
+                <div class="input-group col-md-2 mt-3" id="input1">
+               <span class="input-group-append">
+                   <button class="border-right-0 border bg-white pl-3" type="submit">
+                       <i class="fa fa-search"></i>
+                   </button>
+                </span>
+                    <input class="form-control border-left-0 border" type="search" name="search" id="search-input"
+                           placeholder="Search here...">
                 </div>
+                <button class="cart2 mt-2">
+                    <i class="fas fa-shopping-cart p-2"></i>
+                </button>
             </div>
         </div>
+    </div>
     </div>
 </nav>
 <div class="slides">
@@ -282,27 +286,42 @@
             </p>
             <div class="progress my-4">
                 <div class="progress-bar" id="one">
-                    80%
+                    <div class="box">
+                        <div class="lil-box">80%</div>
+                        <div class="triangle"></div>
+                    </div>
                 </div>
             </div>
             <div class="progress my-4">
                 <div class="progress-bar" id="two">
-                    60%
+                    <div class="box">
+                        <div class="lil-box">60%</div>
+                        <div class="triangle"></div>
+                    </div>
                 </div>
             </div>
             <div class="progress my-4">
                 <div class="progress-bar" id="three">
-                    70%
+                    <div class="box">
+                        <div class="lil-box">70%</div>
+                        <div class="triangle"></div>
+                    </div>
                 </div>
             </div>
             <div class="progress my-4">
                 <div class="progress-bar" id="four">
-                    100%
+                    <div class="box">
+                        <div class="lil-box">100%</div>
+                        <div class="triangle"></div>
+                    </div>
                 </div>
             </div>
             <div class="progress my-4">
                 <div class="progress-bar bg-danger" id="five">
-                    40%
+                    <div class="box">
+                        <div class="lil-box">40%</div>
+                        <div class="triangle"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -359,7 +378,6 @@
                 <div class="row">
                     <div class="col-6">
                         <ul>
-                            <!--red circle icon-->
                             <li class="d-block">
                                 <i class="fas fa-arrow-circle-right arr"></i>
                                 Multiple Layout
@@ -596,14 +614,28 @@
                                 </p>
                             </div>
                             <div class="col-md-5 team-photo">
-                                <img src="css/img/team1.jpg">
+                                <div class="bord">
+                                    <div class="hov">
+                                        <div class="ar-ic">
+                                            <i class="fas fa-long-arrow-alt-left"></i>
+                                            <i class="fas fa-long-arrow-alt-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="row">
                             <div class="col-md-5 team-photo">
-                                <img src="css/img/team2.jpg">
+                                <div class="bord">
+                                    <div class="hov2">
+                                        <div class="ar-ic">
+                                            <i class="fas fa-long-arrow-alt-left"></i>
+                                            <i class="fas fa-long-arrow-alt-right"></i>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="col-md-7 text2">
                                 <h5>
@@ -647,10 +679,10 @@
                             </div>
                         </div>
                         <div class="col-md-10 my-4">
-                            <h4>
+                            <h4 class="align">
                                 PREMIUM SLIDERS INCLUDED
                             </h4>
-                            <p>
+                            <p class="align">
                                 There are many variations of demo text passed sages of Lorem Ipsum available the
                                 majority.
                             </p>
@@ -665,10 +697,10 @@
                             </div>
                         </div>
                         <div class="col-md-10 my-4">
-                            <h4>
-                                PREMIUM SLIDERS INCLUDED
+                            <h4 class="align">
+                                100% RESPONSIVE LAYOUT
                             </h4>
-                            <p>
+                            <p class="align">
                                 There are many variations of demo text passed sages of Lorem Ipsum available the
                                 majority.
                             </p>
@@ -683,10 +715,10 @@
                             </div>
                         </div>
                         <div class="col-md-10 my-4">
-                            <h4>
-                                PREMIUM SLIDERS INCLUDED
+                            <h4 class="align">
+                                POWERFUL PERFORMANCE
                             </h4>
-                            <p>
+                            <p class="align">
                                 There are many variations of demo text passed sages of Lorem Ipsum available the
                                 majority.
                             </p>
@@ -735,7 +767,7 @@
             <h4 class="text-primary">GET ON TOUCH</h4>
         </div>
         <span class="spacer50"></span>
-        <div class="">
+        <div>
             <form>
                 <div class="row my-3">
                     <div class="col-md-2">
@@ -792,12 +824,13 @@
                 </h3>
             </div>
         </div>
-
     </div>
 </div>
 <div class="container-fluid bord">
     <!--google maps-->
-    map
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d280.81401255271743!2d21.127338974771167!3d55.73223075
+410827!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46e4d967917ea813%3A0xb40b901fe6a4212c!2sExpress+Pizza!5e0!3m2
+!1slt!2slt!4v1558598251350!5m2!1slt!2slt" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
 </div>
 <footer class="bg-dark text-secondary bord">
     <div class="container">
@@ -827,11 +860,15 @@
                         <p class="mt-3 mb-5 ftr">
                             By subscribing to our mailing list you will always be update with the latest news :
                         </p>
-                        <form class="mx-0">
-                            <input type="email" name="email" placeholder="Your Email Here..." class="p-1">
-                            <button type="submit" class="btn btn-primary">
-                                <i class="far fa-paper-plane mx-0"></i>
-                            </button>
+                        <form>
+                        <div class="input-group" id="input2">
+                            <input type="email" name="email" placeholder="Your Email Here..." class="form-control">
+                            <span class="input-group-btn">
+                                <button class="btn btn-primary" type="submit">
+                                    <i class="far fa-paper-plane mx-0"></i>
+                                </button>
+                            </span>
+                        </div>
                         </form>
                     </div>
                 </div>
@@ -841,8 +878,10 @@
                     RECENT POSTS
                 </h6>
                 <div class="row my-3">
-                    <div class="col-md-5">
-                        <img src="css/img/thumb1.jpg">
+                    <div class="col-md-5" id="th1">
+                        <div class="change-color">
+                            <i class="fas fa-link"></i>
+                        </div>
                     </div>
                     <div class="col-md-7">
                         <h6 class="thumb text-light">
@@ -858,8 +897,10 @@
                     </div>
                 </div>
                 <div class="row my-3">
-                    <div class="col-md-5">
-                        <img src="css/img/thumb2.jpg">
+                    <div class="col-md-5" id="th2">
+                        <div class="change-color">
+                            <i class="fas fa-link"></i>
+                        </div>
                     </div>
                     <div class="col-md-7">
                         <h6 class="thumb text-light">
@@ -875,8 +916,10 @@
                     </div>
                 </div>
                 <div class="row my-3">
-                    <div class="col-md-5">
-                        <img src="css/img/thumb3.jpg">
+                    <div class="col-md-5" id="th3">
+                        <div class="change-color">
+                            <i class="fas fa-link"></i>
+                        </div>
                     </div>
                     <div class="col-md-7">
                         <h6 class="thumb text-light">
@@ -892,8 +935,10 @@
                     </div>
                 </div>
                 <div class="row my-3">
-                    <div class="col-md-5">
-                        <img src="css/img/thumb4.jpg">
+                    <div class="col-md-5" id="th4">
+                        <div class="change-color">
+                            <i class="fas fa-link"></i>
+                        </div>
                     </div>
                     <div class="col-md-7">
                         <h6 class="thumb text-light">
@@ -979,24 +1024,48 @@
                         </h6>
                         <div class="row">
                             <div class="col-md-4 my-3">
-                                <img src="css/img/flicker1.jpg" class="im">
+                                <div id="img_div1">
+                                    <div class="change-color">
+                                        <i class="fas fa-link"></i>
+                                    </div>
+                                </div>
                             </div>
                             <div class="col-md-4 my-3">
-                                <img src="css/img/flicker2.jpg" class="im">
+                                <div id="img_div2">
+                                    <div class="change-color">
+                                        <i class="fas fa-link"></i>
+                                    </div>
+                                </div>
                             </div>
                             <div class="col-md-4 my-3">
-                                <img src="css/img/flicker3.jpg" class="im">
+                                <div id="img_div3">
+                                    <div class="change-color">
+                                        <i class="fas fa-link"></i>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-md-4">
-                                <img src="css/img/flicker4.jpg" class="im">
+                                <div id="img_div4">
+                                    <div class="change-color">
+                                        <i class="fas fa-link"></i>
+                                    </div>
+                                </div>
                             </div>
                             <div class="col-md-4">
-                                <img src="css/img/flicker5.jpg" class="im">
+                                <div id="img_div5">
+                                    <div class="change-color">
+                                        <i class="fas fa-link"></i>
+                                    </div>
+                                </div>
                             </div>
                             <div class="col-md-4">
-                                <img src="css/img/flicker6.jpg" class="im">
+                                <div id="img_div6">
+                                    <div class="change-color">
+                                        <i class="fas fa-link"></i>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -1014,7 +1083,7 @@
                                 <div class="col-md-5">
                                 </div>
                                 <div class="col-md-7">
-                                    JOHN DOE
+                                   <span id="author"> JOHN DOE </span>
                                     <div class="row">
                                         <div class="col-md-12 px-0">
                                             <ul>
@@ -1034,7 +1103,6 @@
                                         </div>
                                     </div>
                                 </div>
-
                             </div>
                         </div>
                     </div>
@@ -1048,11 +1116,13 @@
                             <img src="css/img/blog5.jpg">
                             <div class="play">
                             </div>
-                            <button id="arrow">
+                            <div id="arrow">
                                 <a href="#">
-                                    <i class="far fa-play-circle"></i>
+                                    <button id="arw">
+                                        <i class="far fa-play-circle"></i>
+                                    </button>
                                 </a>
-                            </button>
+                            </div>
                         </div>
                     </div>
                 </div>

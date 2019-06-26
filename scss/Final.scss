@@ -6,7 +6,6 @@
 
 body, html {
   width: 100%;
-  height: 100%;
 }
 
 body {
@@ -44,6 +43,7 @@ ul.right {
 
 nav {
   height: 60px;
+  background: white;
 }
 
 .navbar {
@@ -62,22 +62,39 @@ nav {
   }
 }
 
-#search {
-  border-radius: 10px;
-  width: 120px;
-  margin-top: 10px;
-  outline: none;
-  border-left: none;
-}
+div#input1 {
+  height: 20px;
 
-.isearch {
-  border-radius: 5px;
-  border-right: none;
-  background: transparent;
+  input {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-size: 12px;
+    padding: 5px;
+  }
+
+  input:focus {
+    box-shadow: none;
+  }
+
+  button {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    color: teal;
+  }
+
+  button:focus {
+    box-shadow: none;
+    outline: none;
+  }
 }
 
 .cart2 {
   border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  outline: none;
+  background: transparent;
+  border: 1px solid lightgrey;
 }
 
 .man {
@@ -275,6 +292,42 @@ ul.right {
 .progress {
   border-radius: 0;
   height: 40px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  transition: 2s;
+  width: 0;
+  position: relative;
+}
+
+.box {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  color: black;
+}
+
+.lil-box {
+  background: white;
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 10px 5px 0;
+  border-color: transparent white transparent transparent;
+
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 #one {
@@ -370,13 +423,69 @@ ul.right {
 }
 
 .team-photo {
-  img {
+  .bord {
     width: 200px;
     height: 200px;
     border-radius: 50%;
-    border: 1px solid grey;
     padding: 5px;
-    background: white;
+    border: 1px solid grey;
+    position: relative;
+  }
+
+  .hov {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    background-image: url("../css/img/team1.jpg");
+  }
+
+  .hov2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 190px;
+    height: 190px;
+    border-radius: 50%;
+    padding: 5px;
+    background-image: url("../css/img/team2.jpg");
+
+  }
+
+  .ar-ic {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 45px;
+    color: #fff;
+    opacity: 0;
+    transition: 2s;
+  }
+}
+
+.team-photo:hover {
+  .bord {
+    padding: 0;
+    border: 5px solid #005f5f;
+
+    .hov {
+      background: teal;
+    }
+
+    .hov2 {
+      background: teal;
+
+    }
+  }
+
+  .ar-ic {
+    opacity: 1;
+    font-size: 20px;
   }
 }
 
@@ -411,6 +520,10 @@ ul.right {
   span {
     position: relative;
   }
+}
+
+.align {
+  text-align: left;
 }
 
 .grow2 {
@@ -561,6 +674,106 @@ textarea #message {
   font-size: 12px;
 }
 
+iframe {
+  width: 100%;
+  height: 350px;
+}
+
+#input2 {
+  button {
+    border-radius: 0;
+  }
+}
+
+#th1 {
+  background-image: url("../css/img/thumb1.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+#th2 {
+  background-image: url("../css/img/thumb2.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+#th3 {
+  background-image: url("../css/img/thumb3.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+#th4 {
+  background-image: url("../css/img/thumb4.jpg");
+  background-size: cover;
+  position: relative;
+}
+
+#img_div1 {
+  background-image: url("../css/img/flicker1.jpg");
+  width: 80px;
+  height: 80px;
+  position: relative;
+}
+
+#img_div2 {
+  background-image: url("../css/img/flicker2.jpg");
+  width: 80px;
+  height: 80px;
+  position: relative;
+}
+
+#img_div3 {
+  background-image: url("../css/img/flicker3.jpg");
+  width: 80px;
+  height: 80px;
+  position: relative;
+}
+
+#img_div4 {
+  background-image: url("../css/img/flicker4.jpg");
+  width: 80px;
+  height: 80px;
+  position: relative;
+}
+
+#img_div5 {
+  background-image: url("../css/img/flicker5.jpg");
+  width: 80px;
+  height: 80px;
+  position: relative;
+}
+
+#img_div6 {
+  background-image: url("../css/img/flicker6.jpg");
+  width: 80px;
+  height: 80px;
+  position: relative;
+}
+
+.change-color {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  background: #00c194;
+  transition: 1s;
+  opacity: 0;
+
+  i {
+    font-size: 30px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+.change-color:hover {
+  opacity: 1;
+}
+
 #butt i.display {
   opacity: 0;
   transition: 1s;
@@ -613,45 +826,58 @@ textarea #message {
   position: relative;
   height: 90px;
 }
-#video{
+
+.wht:hover {
+  color: #00bcbc;
+}
+
+#video {
   position: relative;
-  img{
+
+  img {
     width: 100%;
     height: 180px;
     border: 3px solid #1d1d1d;
     border-radius: 4px;
   }
-  #arrow{
-     position: absolute;
-     right: 50%;
-     top: 50%;
-     transform: translateY(-50%);
-     font-size: 50px;
-     background: transparent;
-     border: none;
-     outline: none;
-    a{
-      text-decoration: none;
-      color: #fff;
-    }
-   }
 
+  #arrow {
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+
+    a {
+      text-decoration: none;
+    }
+  }
 }
-#arrow:hover{
+
+#arw {
+  font-size: 50px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff;
+}
+
+#arrow:hover i {
   animation: rotate;
   animation-duration: 2s;
 }
-.play{
-   width: 100%;
-   height: 100%;
-   background: teal;
+
+.play {
+  width: 100%;
+  height: 100%;
+  background: teal;
   opacity: 0.3;
   position: absolute;
   bottom: 0;
   border-radius: 4px;
   transition: 2s;
- }
-.play:hover{
+}
+
+.play:hover {
   opacity: 0.6;
 }
 
@@ -691,11 +917,12 @@ textarea #message {
     left: 20%;
   }
 }
+
 @keyframes rotate {
-  from{
+  from {
     transform: rotate(0deg);
   }
-  to{
+  to {
     transform: rotate(90deg);
   }
 }

@@ -5,11 +5,11 @@
         return $(this).each(function () {
             // set options for current element
             var settings = $.extend({}, $.fn.countTo.defaults, {
-                from:            $(this).data('from'),
-                to:              $(this).data('to'),
-                speed:           $(this).data('speed'),
+                from: $(this).data('from'),
+                to: $(this).data('to'),
+                speed: $(this).data('speed'),
                 refreshInterval: $(this).data('refresh-interval'),
-                decimals:        $(this).data('decimals')
+                decimals: $(this).data('decimals')
             }, options);
 
             // how many times to update the value, and how much to increment the value on each update
@@ -40,7 +40,7 @@
 
                 render(value);
 
-                if (typeof(settings.onUpdate) == 'function') {
+                if (typeof (settings.onUpdate) == 'function') {
                     settings.onUpdate.call(self, value);
                 }
 
@@ -50,7 +50,7 @@
                     clearInterval(data.interval);
                     value = settings.to;
 
-                    if (typeof(settings.onComplete) == 'function') {
+                    if (typeof (settings.onComplete) == 'function') {
                         settings.onComplete.call(self, value);
                     }
                 }

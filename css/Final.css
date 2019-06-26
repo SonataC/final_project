@@ -4,8 +4,7 @@
   padding: 0; }
 
 body, html {
-  width: 100%;
-  height: 100%; }
+  width: 100%; }
 
 body {
   font-family: "lato", sans-serif; }
@@ -28,7 +27,8 @@ ul li {
   width: 90%; }
 
 nav {
-  height: 60px; }
+  height: 60px;
+  background: white; }
 
 .navbar li {
   display: inline-block; }
@@ -39,20 +39,30 @@ nav {
   .navbar li a:hover {
     color: blue; }
 
-#search {
-  border-radius: 10px;
-  width: 120px;
-  margin-top: 10px;
-  outline: none;
-  border-left: none; }
-
-.isearch {
-  border-radius: 5px;
-  border-right: none;
-  background: transparent; }
+div#input1 {
+  height: 20px; }
+  div#input1 input {
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    font-size: 12px;
+    padding: 5px; }
+  div#input1 input:focus {
+    box-shadow: none; }
+  div#input1 button {
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    color: teal; }
+  div#input1 button:focus {
+    box-shadow: none;
+    outline: none; }
 
 .cart2 {
-  border-radius: 50%; }
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  outline: none;
+  background: transparent;
+  border: 1px solid lightgrey; }
 
 .man {
   width: 100%;
@@ -200,7 +210,38 @@ ul.right li:hover {
 
 .progress {
   border-radius: 0;
-  height: 40px; }
+  height: 40px;
+  overflow: hidden; }
+
+.progress-bar {
+  transition: 2s;
+  width: 0;
+  position: relative; }
+
+.box {
+  position: absolute;
+  top: 50%;
+  right: 15px;
+  transform: translateY(-50%);
+  color: black; }
+
+.lil-box {
+  background: white;
+  width: 100%;
+  height: 100%;
+  padding: 5px;
+  border-radius: 5px; }
+
+.triangle {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 5px 10px 5px 0;
+  border-color: transparent white transparent transparent;
+  position: absolute;
+  left: -10px;
+  top: 50%;
+  transform: translateY(-50%); }
 
 #one {
   width: 80%;
@@ -276,13 +317,56 @@ ul.right li:hover {
   font-size: 27px;
   font-weight: lighter; }
 
-.team-photo img {
+.team-photo .bord {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  border: 1px solid grey;
   padding: 5px;
-  background: white; }
+  border: 1px solid grey;
+  position: relative; }
+
+.team-photo .hov {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  background-image: url("../css/img/team1.jpg"); }
+
+.team-photo .hov2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 190px;
+  height: 190px;
+  border-radius: 50%;
+  padding: 5px;
+  background-image: url("../css/img/team2.jpg"); }
+
+.team-photo .ar-ic {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 45px;
+  color: #fff;
+  opacity: 0;
+  transition: 2s; }
+
+.team-photo:hover .bord {
+  padding: 0;
+  border: 5px solid #005f5f; }
+  .team-photo:hover .bord .hov {
+    background: teal; }
+  .team-photo:hover .bord .hov2 {
+    background: teal; }
+
+.team-photo:hover .ar-ic {
+  opacity: 1;
+  font-size: 20px; }
 
 .text {
   text-align: right; }
@@ -307,6 +391,9 @@ ul.right li:hover {
   height: 80px; }
   .circle2 span {
     position: relative; }
+
+.align {
+  text-align: left; }
 
 .grow2 h4 {
   transition: all .35s ease-in-out; }
@@ -420,6 +507,88 @@ textarea #message {
 .thumbs {
   font-size: 12px; }
 
+iframe {
+  width: 100%;
+  height: 350px; }
+
+#input2 button {
+  border-radius: 0; }
+
+#th1 {
+  background-image: url("../css/img/thumb1.jpg");
+  background-size: cover;
+  position: relative; }
+
+#th2 {
+  background-image: url("../css/img/thumb2.jpg");
+  background-size: cover;
+  position: relative; }
+
+#th3 {
+  background-image: url("../css/img/thumb3.jpg");
+  background-size: cover;
+  position: relative; }
+
+#th4 {
+  background-image: url("../css/img/thumb4.jpg");
+  background-size: cover;
+  position: relative; }
+
+#img_div1 {
+  background-image: url("../css/img/flicker1.jpg");
+  width: 80px;
+  height: 80px;
+  position: relative; }
+
+#img_div2 {
+  background-image: url("../css/img/flicker2.jpg");
+  width: 80px;
+  height: 80px;
+  position: relative; }
+
+#img_div3 {
+  background-image: url("../css/img/flicker3.jpg");
+  width: 80px;
+  height: 80px;
+  position: relative; }
+
+#img_div4 {
+  background-image: url("../css/img/flicker4.jpg");
+  width: 80px;
+  height: 80px;
+  position: relative; }
+
+#img_div5 {
+  background-image: url("../css/img/flicker5.jpg");
+  width: 80px;
+  height: 80px;
+  position: relative; }
+
+#img_div6 {
+  background-image: url("../css/img/flicker6.jpg");
+  width: 80px;
+  height: 80px;
+  position: relative; }
+
+.change-color {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  background: #00c194;
+  transition: 1s;
+  opacity: 0; }
+  .change-color i {
+    font-size: 30px;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.change-color:hover {
+  opacity: 1; }
+
 #butt i.display {
   opacity: 0;
   transition: 1s; }
@@ -460,6 +629,9 @@ textarea #message {
   position: relative;
   height: 90px; }
 
+.wht:hover {
+  color: #00bcbc; }
+
 #video {
   position: relative; }
   #video img {
@@ -471,16 +643,18 @@ textarea #message {
     position: absolute;
     right: 50%;
     top: 50%;
-    transform: translateY(-50%);
-    font-size: 50px;
-    background: transparent;
-    border: none;
-    outline: none; }
+    transform: translateY(-50%); }
     #video #arrow a {
-      text-decoration: none;
-      color: #fff; }
+      text-decoration: none; }
 
-#arrow:hover {
+#arw {
+  font-size: 50px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #fff; }
+
+#arrow:hover i {
   animation: rotate;
   animation-duration: 2s; }
 
