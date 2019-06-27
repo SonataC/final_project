@@ -17,11 +17,20 @@ header {
 .dropdown {
   list-style-type: none; }
 
+#index {
+  z-index: 9999; }
+
 ul li {
   list-style-type: none;
   display: inline-block;
   font-size: 12px;
   padding: 10px; }
+
+ul.right li:hover {
+  background: #15b484;
+  border-radius: 5px; }
+  ul.right li:hover i {
+    color: #fff; }
 
 .container {
   width: 90%; }
@@ -120,9 +129,6 @@ span.black {
   font-size: 20px;
   padding: 20px; }
 
-ul.right li:hover {
-  background: green; }
-
 .circle {
   border-radius: 100%;
   border: 1px solid aqua;
@@ -205,34 +211,31 @@ ul.right li:hover {
   font-size: 12px;
   text-align: justify; }
 
-.all-prog-bars {
-  padding: 30px 60px; }
-
 .progress {
-  border-radius: 0;
   height: 40px;
-  overflow: hidden; }
+  overflow: hidden;
+  border-radius: 0; }
 
 .progress-bar {
   transition: 2s;
   width: 0;
   position: relative; }
 
-.box {
+.cloud {
   position: absolute;
   top: 50%;
   right: 15px;
   transform: translateY(-50%);
   color: black; }
 
-.lil-box {
+.inner-cloud {
   background: white;
   width: 100%;
   height: 100%;
   padding: 5px;
   border-radius: 5px; }
 
-.triangle {
+.cloudTriangle {
   width: 0;
   height: 0;
   border-style: solid;
@@ -243,29 +246,26 @@ ul.right li:hover {
   top: 50%;
   transform: translateY(-50%); }
 
-#one {
-  width: 80%;
-  background: #3a94b2;
-  text-align: right; }
+.title-container {
+  position: absolute;
+  left: -9999px;
+  transition: 1s;
+  padding: 0 15px; }
 
-#two {
-  width: 60%;
-  background: #1ccdca;
-  text-align: right; }
+#prog1 {
+  background: #0bacb8; }
 
-#three {
-  width: 70%;
-  background: #00c194;
-  text-align: right; }
+#prog2 {
+  background: #3a94b2; }
 
-#four {
-  width: 100%;
-  background: #00c194;
-  text-align: right; }
+#prog3 {
+  background: #1ccdca; }
 
-#five {
-  width: 40%;
-  text-align: right; }
+#prog4 {
+  background: #00c194; }
+
+#prog5 {
+  background: #e74c3c; }
 
 .icons {
   font-size: 36px;
@@ -333,7 +333,8 @@ ul.right li:hover {
   width: 190px;
   height: 190px;
   border-radius: 50%;
-  background-image: url("../css/img/team1.jpg"); }
+  background-image: url("../css/img/team1.jpg");
+  transition: 2s; }
 
 .team-photo .hov2 {
   position: absolute;
@@ -344,7 +345,8 @@ ul.right li:hover {
   height: 190px;
   border-radius: 50%;
   padding: 5px;
-  background-image: url("../css/img/team2.jpg"); }
+  background-image: url("../css/img/team2.jpg");
+  transition: 2s ease-in-out; }
 
 .team-photo .ar-ic {
   position: absolute;
@@ -354,7 +356,7 @@ ul.right li:hover {
   font-size: 45px;
   color: #fff;
   opacity: 0;
-  transition: 2s; }
+  transition: 2s ease-in-out; }
 
 .team-photo:hover .bord {
   padding: 0;
@@ -534,41 +536,28 @@ iframe {
   background-size: cover;
   position: relative; }
 
-#img_div1 {
-  background-image: url("../css/img/flicker1.jpg");
+.img_div {
   width: 80px;
   height: 80px;
   position: relative; }
-
-#img_div2 {
-  background-image: url("../css/img/flicker2.jpg");
-  width: 80px;
-  height: 80px;
-  position: relative; }
-
-#img_div3 {
-  background-image: url("../css/img/flicker3.jpg");
-  width: 80px;
-  height: 80px;
-  position: relative; }
-
-#img_div4 {
-  background-image: url("../css/img/flicker4.jpg");
-  width: 80px;
-  height: 80px;
-  position: relative; }
-
-#img_div5 {
-  background-image: url("../css/img/flicker5.jpg");
-  width: 80px;
-  height: 80px;
-  position: relative; }
-
-#img_div6 {
-  background-image: url("../css/img/flicker6.jpg");
-  width: 80px;
-  height: 80px;
-  position: relative; }
+  .img_div img {
+    width: 100%;
+    height: 100%; }
+  .img_div .backg {
+    background: #00c194;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: 1s;
+    position: absolute;
+    top: 0; }
+    .img_div .backg i {
+      font-size: 30px;
+      color: #fff;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
 
 .change-color {
   width: 100%;
@@ -587,6 +576,9 @@ iframe {
     transform: translate(-50%, -50%); }
 
 .change-color:hover {
+  opacity: 1; }
+
+.img_div:hover .backg {
   opacity: 1; }
 
 #butt i.display {
@@ -670,6 +662,16 @@ iframe {
 
 .play:hover {
   opacity: 0.6; }
+
+.small a {
+  color: #17a2b8; }
+
+#foot_li li a {
+  text-decoration: none;
+  transition: .50s ease-in-out; }
+
+#foot_li li a:hover {
+  color: #17a2b8 !important; }
 
 @keyframes red-ani {
   0% {

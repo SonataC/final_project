@@ -96,3 +96,86 @@ jQuery(function ($) {
         $this.countTo(options);
     }
 });
+
+$(function() {
+    var scrollActions = {
+        progressBars: false,
+        // runningNumbers: false
+    };
+    $(window).on('scroll', function (e) {
+        var _this = $(this);
+        var scrolledTop = _this.scrollTop();
+
+        if (scrolledTop + _this.outerHeight() >= $("#progress_bars").offset().top
+            && !scrollActions.progressBars
+        ) {
+            startProgressBarsAnimation();
+            scrollActions.progressBars = true;
+        }
+
+        // if (scrolledTop + _this.outerHeight() >= $("#running_numbers").offset().top
+        //     && !scrollActions.runningNumbers
+        // ) {
+        //     startRunningNumbersAnimation();
+        //     scrollActions.runningNumbers = true;
+        // }
+    });
+
+    // jQuery example
+    // $('.progress-bar').each(function () {
+    //     var elm = $(this);
+    //
+    //     setTimeout(function () {
+    //         elm.animate({width:  parseFloat(elm.data('percentage')) + "%"}, 500);
+    //     }, 3000);
+    // });
+
+    // Plain JS
+    function startProgressBarsAnimation() {
+        var elements = document.getElementsByClassName('progress-bar');
+        for (var i = 0; i < elements.length; i++) {
+            var elm = elements[i];
+            handleText(elm, true);
+            addInterval(elm);
+        }
+    }
+
+    // function startRunningNumbersAnimation() {
+    //     var elements = document.getElementsByClassName('running-numbers');
+    //     for (var i = 0; i < elements.length; i++) {
+    //         var elm = elements[i];
+    //         handleText(elm, true);
+    //         addInterval(elm);
+    //     }
+    // }
+
+    function stop(interval) {
+        clearInterval(interval);
+    }
+
+    function handleText(elm, hide) {
+        var titleContainerElm = elm.getElementsByClassName("title-container")[0];
+        var left = 0;
+        if (hide) {
+            left = "-" + titleContainerElm.offsetWidth + "px";
+        }
+        titleContainerElm.style.left = left;
+    }
+
+    function addInterval(elm)
+    {
+        var innerCloudElm = elm.getElementsByClassName('inner-cloud')[0];
+        var percentage = parseFloat(elm.getAttribute('data-percentage'));
+        var counter = 0;
+        var interval = setInterval(function() {
+            elm.style.width = percentage + "%";
+            innerCloudElm.innerHTML = counter + "%";
+
+            if (counter === parseInt(percentage)) {
+                stop(interval);
+                handleText(elm);
+            }
+            counter++;
+        }, 30);
+    }
+});

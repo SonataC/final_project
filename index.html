@@ -5,15 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Final project</title>
     <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-            integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-            crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-            integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-            crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-            integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-            crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
           integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
@@ -27,9 +18,8 @@
             <div class="row">
                 <div class="col-md-7">
                     <ul class="left">
-                        <!-- class="dropdown-item"-->
                         <li>
-                            <div class="dropdown">
+                            <div class="dropdown" id="index">
                                 <span>
                                     <i class="fas fa-globe-europe"></i>
                                 </span>
@@ -154,7 +144,6 @@
                 </button>
             </div>
         </div>
-    </div>
     </div>
 </nav>
 <div class="slides">
@@ -284,46 +273,53 @@
                 Lorem Ipsum is simply dummy text of the printing and typeseting industry Lorem in text Ipsum has been
                 the industry standar dummy text ever since the when an iunesi known printer of took a galley of type.
             </p>
-            <div class="progress my-4">
-                <div class="progress-bar" id="one">
-                    <div class="box">
-                        <div class="lil-box">80%</div>
-                        <div class="triangle"></div>
+            <section id="progress_bars">
+                <div class="progress my-4 bg-secondary">
+                    <div class="progress-bar" data-percentage="80" id="prog1">
+                        <div class="title-container">WEB DESIGN</div>
+                        <div class="cloud">
+                            <div class="inner-cloud"></div>
+                            <div class="cloudTriangle"></div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="progress my-4">
-                <div class="progress-bar" id="two">
-                    <div class="box">
-                        <div class="lil-box">60%</div>
-                        <div class="triangle"></div>
+                <div class="progress my-4 bg-secondary">
+                    <div class="progress-bar" data-percentage="60" id="prog2">
+                        <div class="title-container">PROGRAMMING</div>
+                        <div class="cloud">
+                            <div class="inner-cloud"></div>
+                            <div class="cloudTriangle"></div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="progress my-4">
-                <div class="progress-bar" id="three">
-                    <div class="box">
-                        <div class="lil-box">70%</div>
-                        <div class="triangle"></div>
+                <div class="progress my-4 bg-secondary">
+                    <div class="progress-bar" data-percentage="70" id="prog3">
+                        <div class="title-container">HTML/CSS</div>
+                        <div class="cloud">
+                            <div class="inner-cloud"></div>
+                            <div class="cloudTriangle"></div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="progress my-4">
-                <div class="progress-bar" id="four">
-                    <div class="box">
-                        <div class="lil-box">100%</div>
-                        <div class="triangle"></div>
+                <div class="progress my-4 bg-secondary">
+                    <div class="progress-bar" data-percentage="100" id="prog4">
+                        <div class="title-container">WORDPRESS</div>
+                        <div class="cloud">
+                            <div class="inner-cloud"></div>
+                            <div class="cloudTriangle"></div>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="progress my-4">
-                <div class="progress-bar bg-danger" id="five">
-                    <div class="box">
-                        <div class="lil-box">40%</div>
-                        <div class="triangle"></div>
+                <div class="progress mb-5 mt-4 bg-secondary">
+                    <div class="progress-bar" data-percentage="40" id="prog5">
+                        <div class="title-container">JOOMLA</div>
+                        <div class="cloud">
+                            <div class="inner-cloud"></div>
+                            <div class="cloudTriangle"></div>
+                        </div>
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
     </div>
 </div>
@@ -726,7 +722,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 pic">
-                    <img src="css/img/looking1.jpg">
+                    <img src="css/img/looking1.jpg" alt="looking">
                 </div>
             </div>
         </div>
@@ -834,14 +830,14 @@
 </div>
 <footer class="bg-dark text-secondary bord">
     <div class="container">
-        <div class="row">
+        <div class="row mr-1">
             <div class="col-md-3">
-                <div class="row border-bottom">
+                <div class="row">
                     <div class="col-md-12">
                         <h6 class="text-light mt-5">
                             COMPANY INFO
                         </h6>
-                        <img src="css/img/logo-light.png" class="my-3">
+                        <img src="css/img/logo-light.png" class="my-3" alt="logo">
                         <p class="my-3 ftr">
                             There are many Purchase Now There are many variations of passages of Lorem Ipsum available,
                             but the majority.
@@ -852,7 +848,7 @@
                         </button>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row border-top mr-1">
                     <div class="col-md-12">
                         <h6 class="text-light mt-4">
                             NEWSTELLER SIGNUP
@@ -861,14 +857,14 @@
                             By subscribing to our mailing list you will always be update with the latest news :
                         </p>
                         <form>
-                        <div class="input-group" id="input2">
-                            <input type="email" name="email" placeholder="Your Email Here..." class="form-control">
-                            <span class="input-group-btn">
+                            <div class="input-group" id="input2">
+                                <input type="email" name="email" placeholder="Your Email Here..." class="form-control">
+                                <span class="input-group-btn">
                                 <button class="btn btn-primary" type="submit">
                                     <i class="far fa-paper-plane mx-0"></i>
                                 </button>
                             </span>
-                        </div>
+                            </div>
                         </form>
                     </div>
                 </div>
@@ -968,7 +964,7 @@
                 <h6 class="text-light mt-5">
                     CLOUD TAGS
                 </h6>
-                <div class="row border-bottom">
+                <div class="row mb-5">
                     <div class="col-md-12">
                         <button class="btn bt-d2 my-1 text-secondary">
                             <span>
@@ -1000,70 +996,96 @@
                                 HTML5
                             </span>
                         </button>
-                        <button class="btn bt-d2 my-1 mb-5 text-secondary">
+                        <button class="btn bt-d2 my-1 text-secondary">
                            <span>
                                SEO
                            </span>
                         </button>
-                        <button class="btn bt-d2 my-1 mb-5 text-secondary">
+                        <button class="btn bt-d2 my-1 text-secondary">
                             <span>
                                 CSS3
                             </span>
                         </button>
-                        <button class="btn bt-d2 my-1 mb-5 text-secondary">
+                        <button class="btn bt-d2 my-1 text-secondary">
                            <span>
                                WEB DESIGN
                            </span>
                         </button>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row mr-1 border-top">
                     <div class="col-md-12">
-                        <h6 class="text-light mt-3">
+                        <h6 class="text-light my-3">
                             FLICKER WIDGET
                         </h6>
                         <div class="row">
-                            <div class="col-md-4 my-3">
-                                <div id="img_div1">
-                                    <div class="change-color">
-                                        <i class="fas fa-link"></i>
+                            <div class="col-md-12">
+                                <div class="row mb-3">
+                                    <div class="col-md-4 pr-1">
+                                        <div class="img_div">
+                                            <a href="#">
+                                                <img src="css/img/flicker1.jpg" alt="flick">
+                                                <div class="backg">
+                                                    <i class="fas fa-link"></i>
+                                                </div>
+                                            </a>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 my-3">
-                                <div id="img_div2">
-                                    <div class="change-color">
-                                        <i class="fas fa-link"></i>
+                                    <div class="col-md-4 pr-1">
+                                        <div class="img_div">
+                                            <a href="#">
+                                                <img src="css/img/flicker2.jpg" alt="flick">
+                                                <div class="backg">
+                                                    <i class="fas fa-link"></i>
+                                                </div>
+                                            </a>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4 my-3">
-                                <div id="img_div3">
-                                    <div class="change-color">
-                                        <i class="fas fa-link"></i>
+                                    <div class="col-md-4 pr-1">
+                                        <div class="img_div">
+                                            <a href="#">
+                                                <img src="css/img/flicker3.jpg" alt="flick">
+                                                <div class="backg">
+                                                    <i class="fas fa-link"></i>
+                                                </div>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="row">
-                            <div class="col-md-4">
-                                <div id="img_div4">
-                                    <div class="change-color">
-                                        <i class="fas fa-link"></i>
+                            <div class="col-md-12 p-0">
+                                <div class="row m-0">
+                                    <div class="col-md-4 pr-1">
+                                        <div class="img_div">
+                                            <a href="#">
+                                                <img src="css/img/flicker4.jpg" alt="flick">
+                                                <div class="backg">
+                                                    <i class="fas fa-link"></i>
+                                                </div>
+                                            </a>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div id="img_div5">
-                                    <div class="change-color">
-                                        <i class="fas fa-link"></i>
+                                    <div class="col-md-4 pr-1">
+                                        <div class="img_div">
+                                            <a href="#">
+                                                <img src="css/img/flicker5.jpg" alt="flick">
+                                                <div class="backg">
+                                                    <i class="fas fa-link"></i>
+                                                </div>
+                                            </a>
+                                        </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div id="img_div6">
-                                    <div class="change-color">
-                                        <i class="fas fa-link"></i>
+                                    <div class="col-md-4">
+                                        <div class="img_div">
+                                            <a href="#">
+                                                <img src="css/img/flicker6.jpg" alt="flick">
+                                                <div class="backg">
+                                                    <i class="fas fa-link"></i>
+                                                </div>
+                                            </a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -1075,15 +1097,15 @@
                 <h6 class="text-light mt-5 mb-4">
                     BEST AUTHOR
                 </h6>
-                <div class="row border-bottom">
+                <div class="row">
                     <div class="col-md-12">
                         <div class="wht bg-light mb-5">
-                            <img src="css/img/team2.jpg" id="im_brd">
+                            <img src="css/img/team2.jpg" id="im_brd" alt="team">
                             <div class="row">
                                 <div class="col-md-5">
                                 </div>
                                 <div class="col-md-7">
-                                   <span id="author"> JOHN DOE </span>
+                                    <span id="author"> JOHN DOE </span>
                                     <div class="row">
                                         <div class="col-md-12 px-0">
                                             <ul>
@@ -1107,13 +1129,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="row">
+                <div class="row border-top">
                     <div class="col-md-12 mt-3 text-light">
                         <h6>
                             CUSTOM VIDEO
                         </h6>
                         <div id="video" class="mt-4">
-                            <img src="css/img/blog5.jpg">
+                            <img src="css/img/blog5.jpg" alt="blog">
                             <div class="play">
                             </div>
                             <div id="arrow">
@@ -1142,24 +1164,33 @@
                 </span>
             </div>
             <div class="col-md-6 my-3">
-                <ul>
+                <ul id="foot_li">
                     <li>
-                        Home <span class="ml-3">/</span>
+                        <a href="#" class="text-secondary"> Home </a> <span class="ml-3">/</span>
                     </li>
                     <li>
-                        About Us <span class="ml-3">/</span>
+                        <a href="#" class="text-secondary"> About Us </a><span class="ml-3">/</span>
                     </li>
                     <li>
-                        Help Center <span class="ml-3">/</span>
+                        <a href="#" class="text-secondary"> Help Center </a> <span class="ml-3">/</span>
                     </li>
                     <li>
-                        Contact Us
+                        <a href="#" class="text-secondary"> Contact Us </a>
                     </li>
                 </ul>
             </div>
         </div>
     </div>
 </div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 <script src="js/final.js"></script>
 </body>
 </html>
