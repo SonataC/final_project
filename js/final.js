@@ -97,10 +97,9 @@ jQuery(function ($) {
     }
 });
 
-$(function() {
+$(function () {
     var scrollActions = {
         progressBars: false,
-        // runningNumbers: false
     };
     $(window).on('scroll', function (e) {
         var _this = $(this);
@@ -113,12 +112,6 @@ $(function() {
             scrollActions.progressBars = true;
         }
 
-        // if (scrolledTop + _this.outerHeight() >= $("#running_numbers").offset().top
-        //     && !scrollActions.runningNumbers
-        // ) {
-        //     startRunningNumbersAnimation();
-        //     scrollActions.runningNumbers = true;
-        // }
     });
 
     // jQuery example
@@ -140,15 +133,6 @@ $(function() {
         }
     }
 
-    // function startRunningNumbersAnimation() {
-    //     var elements = document.getElementsByClassName('running-numbers');
-    //     for (var i = 0; i < elements.length; i++) {
-    //         var elm = elements[i];
-    //         handleText(elm, true);
-    //         addInterval(elm);
-    //     }
-    // }
-
     function stop(interval) {
         clearInterval(interval);
     }
@@ -162,12 +146,11 @@ $(function() {
         titleContainerElm.style.left = left;
     }
 
-    function addInterval(elm)
-    {
+    function addInterval(elm) {
         var innerCloudElm = elm.getElementsByClassName('inner-cloud')[0];
         var percentage = parseFloat(elm.getAttribute('data-percentage'));
         var counter = 0;
-        var interval = setInterval(function() {
+        var interval = setInterval(function () {
             elm.style.width = percentage + "%";
             innerCloudElm.innerHTML = counter + "%";
 
@@ -178,4 +161,17 @@ $(function() {
             counter++;
         }, 30);
     }
+});
+
+$(function () {
+    $(".video").click(function () {
+        var theModal = $(this).data("target"),
+            videoSRC = $(this).attr("data-video"),
+            videoSRCauto = videoSRC + "?modestbranding=1&rel=0&controls=0&showinfo=0&html5=1&autoplay=1";
+        $(theModal + ' iframe').attr('src', videoSRCauto);
+        $(theModal + ' button.close').click(function () {
+            $(theModal + ' iframe').attr('src', videoSRC);
+
+        });
+    });
 });
