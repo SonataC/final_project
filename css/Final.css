@@ -423,36 +423,51 @@ span.black {
 .team {
   text-align: center; }
 
-.blue-line {
-  height: 2px;
-  background: aqua;
-  width: 20%;
-  position: relative;
-  transition: width 2s;
-  margin: auto; }
-  .blue-line #head {
-    font-size: 20px;
+.position-relative {
+  width: 100%; }
+  .position-relative .line {
+    background: dodgerblue;
+    width: 80px;
+    height: 1px;
     position: absolute;
-    left: 50%;
+    z-index: 1;
+    transition: 0.5s;
     top: 50%;
-    color: aqua; }
-  .blue-line #dot {
-    background: #fff;
-    border: 1px solid #1cc6df;
-    height: 10px;
-    position: absolute;
     left: 50%;
+    transform: translate(-50%, -50%); }
+  .position-relative .grey-line {
+    background: rgba(210, 210, 210, 0.51);
+    width: 33%;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  .position-relative span i {
+    padding: 5px;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    color: dodgerblue;
+    background: white; }
+  .position-relative .small-circle {
     width: 10px;
-    border-radius: 50%; }
-  .blue-line #port {
-    font-size: 20px;
+    height: 10px;
+    border-radius: 50%;
+    z-index: 3;
     position: absolute;
-    left: 50%;
+    border: dodgerblue solid 1px;
+    background: white;
     top: 50%;
-    color: aqua; }
+    left: 50%;
+    transform: translate(-50%, -50%); }
 
-.blue-line:hover {
-  width: 50%; }
+.blue-line:hover .line {
+  width: 200px;
+  height: 1px;
+  position: absolute; }
 
 .team-photo .bord {
   width: 200px;
