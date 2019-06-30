@@ -1,0 +1,47 @@
+{ "plans" : [
+  {
+    "id": 1,
+    "name" : "starter",
+    "price" : "573",
+    "periodicity" : "monthly",
+    "active": false,
+    "benefits" : {
+      "free setup" : true,
+      "50 websites" : false,
+      "55GB storage" : false,
+      "50GB bandwith" : true,
+      "9 months support" : false,
+      "unlimited subdomains" : true
+    }
+  },
+  {
+    "id": 2,
+    "name": "standart",
+    "price": "234",
+    "periodicity": "monthly",
+    "active": true,
+    "benefits": {
+      "free setup": true,
+      "50 websites": false,
+      "55GB storage": true,
+      "50GB bandwith": true,
+      "9 months support": false,
+      "unlimited subdomains": true
+    }
+  },
+  {
+    "id": 3,
+    "name": "professional",
+    "price": "1234",
+    "periodicity": "monthly",
+    "active": false,
+    "benefits": {
+      "free setup": true,
+      "50 websites": true,
+      "55GB storage": true,
+      "50GB bandwith": true,
+      "9 months support": true,
+      "unlimited subdomains": true
+    }
+  }
+]}
